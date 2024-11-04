@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comandos FOR e IF en Archivos BAT</title>
+</head>
+<body bgcolor="#f0f0f0">
+    <center>
+        <h1 style="color: #007acc;">Comandos FOR e IF en Archivos BAT</h1>
+        <p style="font-size: 1.2em; color: #333;">Los comandos <strong>FOR</strong> e <strong>IF</strong> son herramientas esenciales en los archivos BAT que permiten controlar la ejecución de scripts mediante bucles y condiciones, respectivamente. Estos comandos se utilizan para realizar tareas repetitivas y condicionales de forma eficiente.</p>
+
+        <table width="80%" bgcolor="#ffffff" cellpadding="10" border="1" bordercolor="#cccccc">
+            <tr>
+                <td>
+                    <h2 style="color: #00509e;">Comando FOR</h2>
+                    <p>El comando <strong>FOR</strong> permite repetir un conjunto de instrucciones para cada elemento en una lista o rango especificado. Se utiliza para iterar sobre archivos, directorios o listas de valores.</p>
+                    <p>Ejemplo básico del comando FOR, que lista archivos con extensión `.txt` en el directorio actual:</p>
+                    <pre>
+FOR %%F IN (*.txt) DO ECHO Archivo encontrado: %%F
+                    </pre>
+                    <p>Este ejemplo recorrerá todos los archivos `.txt` en el directorio y mostrará cada archivo con el mensaje <code>Archivo encontrado:</code>.</p>
+
+                    <p>Ejemplo de uso de FOR con un rango de números:</p>
+                    <pre>
+FOR /L %%N IN (1, 1, 5) DO ECHO Número actual: %%N
+                    </pre>
+                    <p>El parámetro <strong>/L</strong> permite especificar un rango (en este caso, de 1 a 5). Cada número del rango se mostrará con el mensaje <code>Número actual:</code>.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 style="color: #00509e;">Comando IF</h2>
+                    <p>El comando <strong>IF</strong> permite ejecutar comandos de manera condicional en función de valores específicos. Se utiliza para comparar valores y tomar decisiones en el flujo del script.</p>
+                    <p>Ejemplo básico de uso del comando IF para comparar dos valores:</p>
+                    <pre>
+SET /A VALOR=5
+IF %VALOR% GEQ 5 ECHO El valor es mayor o igual a 5
+                    </pre>
+                    <p>En este caso, el comando <code>ECHO</code> se ejecutará solo si <code>VALOR</code> es mayor o igual a 5. <strong>GEQ</strong> significa "greater or equal" (mayor o igual).</p>
+
+                    <p>Ejemplo de uso de IF con la existencia de archivos:</p>
+                    <pre>
+IF EXIST "archivo.txt" (
+    ECHO El archivo existe.
+) ELSE (
+    ECHO El archivo no existe.
+)
+                    </pre>
+                    <p>Este ejemplo verifica si el archivo <code>archivo.txt</code> existe en el directorio actual. Si existe, muestra el mensaje <code>El archivo existe.</code>; si no, muestra <code>El archivo no existe.</code></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 style="color: #00509e;">Combinando FOR e IF</h2>
+                    <p>También es posible combinar los comandos <strong>FOR</strong> e <strong>IF</strong> para realizar tareas más avanzadas. Por ejemplo, podemos iterar sobre una lista de archivos y verificar si cumplen con cierta condición.</p>
+                    <p>Ejemplo que muestra solo los archivos con tamaño mayor a 0 bytes en el directorio actual:</p>
+                    <pre>
+FOR %%F IN (*.*) DO (
+    IF %%~zF GTR 0 (
+        ECHO Archivo con contenido: %%F
+    )
+)
+                    </pre>
+                    <p>El modificador <strong>%%~zF</strong> obtiene el tamaño del archivo <code>%%F</code>. Si el tamaño es mayor a 0 (<strong>GTR</strong> significa "greater than"), muestra el nombre del archivo.</p>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

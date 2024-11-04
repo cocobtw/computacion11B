@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Archivos BAT</title>
+</head>
+<body bgcolor="#f0f0f0">
+    <center>
+        <h1 style="color: #007acc;">Archivos BAT</h1>
+        <p style="font-size: 1.2em; color: #333;">Los archivos BAT son scripts de procesamiento por lotes en MS-DOS que permiten automatizar tareas a través de la ejecución de una serie de comandos de manera secuencial.</p>
+
+        <table width="80%" bgcolor="#ffffff" cellpadding="10" border="1" bordercolor="#cccccc">
+            <tr>
+                <td>
+                    <h2 style="color: #00509e;">¿Qué es un archivo BAT?</h2>
+                    <p>Un archivo BAT (o archivo por lotes) es un archivo de texto que contiene comandos que se ejecutan en el intérprete de comandos de MS-DOS. Este tipo de archivo permite a los usuarios automatizar tareas repetitivas y ejecutar múltiples comandos con un solo clic, lo que resulta en una mayor eficiencia en la gestión del sistema.</p>
+                    <p>Los archivos BAT son ampliamente utilizados en la administración de sistemas y en la creación de scripts de instalación, ya que pueden contener cualquier comando que se puede ejecutar en la línea de comandos, incluyendo la manipulación de archivos, configuración del sistema, y más.</p>
+                    <center><img src="cmd/batejemplo.jpg" alt="Ejemplo de archivo BAT"></center>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 style="color: #00509e;">Ejemplo de archivo BAT</h2>
+                    <p>A continuación, se muestra un simple ejemplo de un archivo BAT que crea un directorio, cambia al nuevo directorio y lista su contenido:</p>
+                    <pre>
+                        @echo off
+                        MD MiCarpeta
+                        CD MiCarpeta
+                        DIR
+                    </pre>
+                    <p>En este script, la instrucción <strong>@echo off</strong> se utiliza para ocultar los comandos que se están ejecutando, lo que hace que la salida sea más limpia y fácil de leer.</p>
+                    <center><img src="cmd/ejemplobat.jpg" alt="Ejemplo de comandos en archivo BAT"></center>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 style="color: #00509e;">Cómo crear un archivo BAT</h2>
+                    <p>Para crear un archivo BAT, sigue estos pasos:</p>
+                    <ol>
+                        <li>Abre el Bloc de notas en tu computadora.</li>
+                        <li>Escribe los comandos que deseas ejecutar en el archivo.</li>
+                        <li>Haz clic en "Archivo" y selecciona "Guardar como".</li>
+                        <li>En el campo "Nombre", escribe el nombre del archivo seguido de la extensión <strong>.bat</strong> (por ejemplo, <strong>mi_script.bat</strong>).</li>
+                        <li>En "Tipo", selecciona "Todos los archivos" y guarda el archivo en la ubicación deseada.</li>
+                    </ol>
+                    <p>Una vez creado, puedes ejecutar el archivo BAT haciendo doble clic sobre él.</p>
+                    <center><img src="cmd/batcrear.jpg" alt="Creación de archivo BAT"></center>
+                </td>
+            </tr>
+                <td>
+                    <h2 style="color: #00509e;">Comandos Comunes en Archivos BAT</h2>
+                    <p>Además de los comandos básicos, hay varios comandos comunes que se utilizan a menudo en archivos BAT:</p>
+                    <ul>
+                        <li><strong>IF:</strong> Permite ejecutar un bloque de comandos basado en una condición.</li>
+                        <li><strong>FOR:</strong> Utilizado para iterar sobre un conjunto de elementos o archivos.</li>
+                        <li><strong>ECHO:</strong> Muestra mensajes en la pantalla o puede ser utilizado para activar o desactivar la salida de comandos.</li>
+                        <li><strong>PAUSE:</strong> Detiene la ejecución del script y espera a que el usuario presione una tecla.</li>
+                    </ul>
+                    <p>Estos comandos son fundamentales para crear scripts más complejos y eficientes.</p>
+                    <center><img src="cmd/if-for-bar.jpg" alt="Comandos comunes en archivos BAT"></center>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

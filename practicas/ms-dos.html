@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comandos de archivos MS-DOS</title>
+</head>
+<body bgcolor="#f0f0f0">
+    <center>
+        <h1 style="color: #007acc;">Comandos de Archivos MS-DOS</h1>
+        <p style="font-size: 1.2em; color: #333;">Un comando es una instrucción que le das a tu computadora para realizar una tarea específica. En el contexto de MS-DOS (Microsoft Disk Operating System), un comando se utiliza para interactuar con el sistema operativo a través de una interfaz de línea de comandos. MS-DOS es un sistema operativo basado en texto que permite a los usuarios gestionar archivos, ejecutar programas y realizar diversas tareas de administración del sistema mediante comandos. A continuación, se presentan algunos de los comandos más útiles en MS-DOS para gestionar archivos y directorios.</p>
+
+        <table width="80%" bgcolor="#ffffff" cellpadding="10" border="1" bordercolor="#cccccc">
+            <tr>
+                <td>
+                    <h2 style="color: #00509e;">1. CD (Cambiar Directorio)</h2>
+                    <p>El comando <strong>CD</strong> (Change Directory) se utiliza para cambiar el directorio actual en el que estás trabajando. Por ejemplo, si deseas navegar a la carpeta "Documentos", puedes usar:</p>
+                    <pre>CD Documentos</pre>
+                    <p>Para volver al directorio anterior, puedes usar:</p>
+                    <pre>CD ..</pre>
+                    <p>Recuerda que el uso correcto de rutas es esencial, por lo que puedes usar rutas absolutas o relativas.</p>
+                    <center><img src="cmd/Captura.PNG" alt="Ejemplo de comando CD"></center>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 style="color: #00509e;">2. DIR (Listar Archivos)</h2>
+                    <p>El comando <strong>DIR</strong> muestra una lista de los archivos y carpetas en el directorio actual. Puedes usarlo simplemente escribiendo:</p>
+                    <pre>DIR</pre>
+                    <p>Además, puedes agregar opciones para filtrar resultados, como:</p>
+                    <pre>DIR /P</pre>
+                    <p>Esto mostrará la lista de archivos página por página. También puedes usar <strong>/W</strong> para un formato más compacto.</p>
+                    <center><img src="cmd/dir.PNG" alt="Ejemplo de comando DIR"></center>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 style="color: #00509e;">3. RD (Eliminar Directorio)</h2>
+                    <p>El comando <strong>RD</strong> (Remove Directory) se utiliza para eliminar un directorio vacío. Si intentas eliminar un directorio que contiene archivos, recibirás un error. Para usar este comando, escribe:</p>
+                    <pre>RD MiCarpeta</pre>
+                    <p>Si la carpeta no está vacía, primero deberás eliminar su contenido.</p>
+                    <center><img src="cmd/rd.PNG" alt="Ejemplo de comando RD"></center>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 style="color: #00509e;">4. MD (Crear Directorio)</h2>
+                    <p>El comando <strong>MD</strong> (Make Directory) se utiliza para crear un nuevo directorio. Puedes especificar el nombre del directorio que deseas crear de la siguiente manera:</p>
+                    <pre>MD MiNuevaCarpeta</pre>
+                    <p>Este comando es útil para organizar tus archivos en diferentes carpetas.</p>
+                    <center><img src="cmd/md.PNG" alt="Ejemplo de comando MD"></center>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 style="color: #00509e;">5. CLS (Limpiar Pantalla)</h2>
+                    <p>El comando <strong>CLS</strong> (Clear Screen) se utiliza para limpiar la pantalla de la ventana de comandos, eliminando todo el texto visible. Esto es útil para tener un entorno de trabajo más ordenado. Simplemente escribe:</p>
+                    <pre>CLS</pre>
+                    <p>Después de ejecutar este comando, la pantalla quedará vacía y podrás ver la línea de comandos más claramente.</p>
+                    <center><img src="cmd/cls.PNG" alt="Ejemplo de comando CLS"></center>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 style="color: #00509e;">6. TREE (Estructura de Directorios)</h2>
+                    <p>El comando <strong>TREE</strong> muestra la estructura de directorios en forma de árbol, lo que facilita la visualización de las carpetas y subcarpetas en el directorio actual. Para usar este comando, simplemente escribe:</p>
+                    <pre>TREE</pre>
+                    <p>Si deseas mostrar la estructura de una unidad específica, puedes agregar la letra de la unidad, como:</p>
+                    <pre>TREE D:</pre>
+                    <center><img src="cmd/tree.PNG" alt="Ejemplo de comando TREE"></center>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 style="color: #00509e;">7. TYPE (Mostrar Contenido de Archivos)</h2>
+                    <p>El comando <strong>TYPE</strong> se utiliza para mostrar el contenido de un archivo de texto en la pantalla. Esto es útil para ver rápidamente el contenido de archivos sin necesidad de abrir un editor. Por ejemplo:</p>
+                    <pre>TYPE MiArchivo.txt</pre>
+                    <p>Este comando mostrará todo el contenido del archivo en la ventana de comandos.</p>
+                    <center><img src="cmd/type.PNG" alt="Ejemplo de comando TYPE" width="1500px"></center>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

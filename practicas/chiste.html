@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Archivo BAT: Chiste</title>
+</head>
+<body bgcolor="#f0f0f0">
+    <center>
+        <h1 style="color: #007acc;">Archivo BAT: Chiste</h1>
+        <p style="font-size: 1.2em; color: #333;">Este archivo BAT presenta una serie de mensajes para contar un chiste en actos usando comandos de la línea de comandos.</p>
+
+        <table width="80%" bgcolor="#ffffff" cellpadding="10" border="1" bordercolor="#cccccc">
+            <tr>
+                <td>
+                    <h2 style="color: #00509e;">@ECHO OFF</h2>
+                    <p>El comando <strong>@ECHO OFF</strong> oculta los comandos mientras se ejecutan en la consola, mostrando solo el texto deseado. El símbolo <strong>@</strong> al inicio hace que este comando también se oculte.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 style="color: #00509e;">ECHO</h2>
+                    <p>El comando <strong>ECHO</strong> muestra mensajes en la consola. Aquí, se usa para mostrar cada acto del chiste:</p>
+                    <pre>
+ECHO PRIMER ACTO: SALE UN "PAVO" CON UN CUCHILLO.
+ECHO SEGUNDO ACTO: SALE OTRO "PAVO" CON UNA PISTOLA DE RAYOS LASER.
+ECHO TERCER ACTO: SALE OTRO "PAVO" CON UNA ESPADA.
+ECHO COMO SE LLAMA LA OBRA?
+ECHO LOS PAVOS RANGERS.
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 style="color: #00509e;">PAUSE</h2>
+                    <p>El comando <strong>PAUSE</strong> detiene la ejecución del archivo hasta que el usuario presiona una tecla. En este archivo, cada acto se pausa para que el usuario pueda leer el mensaje antes de pasar al siguiente.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 style="color: #00509e;">CLS</h2>
+                    <p>El comando <strong>CLS</strong> limpia la pantalla de la consola, eliminando el texto anterior. Después de cada pausa, se limpia la pantalla para mostrar un "acto" en una pantalla limpia.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2 style="color: #00509e;">Código completo del archivo BAT</h2>
+                    <pre>
+@ECHO OFF
+ECHO PRIMER ACTO: SALE UN "PAVO" CON UN CUCHILLO.
+PAUSE
+CLS
+ECHO SEGUNDO ACTO: SALE OTRO "PAVO" CON UNA PISTOLA DE RAYOS LASER.
+PAUSE
+CLS
+ECHO TERCER ACTO: SALE OTRO "PAVO" CON UNA ESPADA.
+PAUSE
+CLS
+ECHO COMO SE LLAMA LA OBRA?
+PAUSE
+CLS
+ECHO LOS PAVOS RANGERS.
+PAUSE
+CLS
+                    </pre>
+                </td>
+            </tr>
+        </table>
+
+        <h2 style="color: #00509e;">Captura de pantalla de ejecución:</h2>
+        <center>
+            <img src="cmd/chistebat.PNG" alt="Captura de pantalla de ejecución" width="80%">
+        </center>
+    </center>
+</body>
+</html>
